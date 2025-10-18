@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "angular-microsite": {
+      "factory": "./angular-microsite/angular-microsite",
+      "schema": "./angular-microsite/schema.json",
+      "description": "angular microsite generator"
+    }
+  }
+}

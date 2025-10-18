@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "AngularMicrosite",
+  "title": "",
+  "version": "1.0.0",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "x-prompt": "What will your microsite be called?"
+    },
+    "scope": {
+      "type": "string",
+      "description": "",
+      "x-prompt": "What scope should your microsite be prefixed with?"
+    },
+    "port": {
+      "type": "number",
+      "description": "",
+      "x-prompt": "What port will your microsite run on?"
+    },
+    "route": {
+      "type": "string",
+      "description": "",
+      "pattern": "^\\/[-a-zA-Z0-9\\/:_]*$",
+      "x-prompt": "What route will your microsite be hosted on?"
+    },
+    "description": {
+      "type": "string",
+      "description": "",
+      "x-prompt": "What is the purpose of your microsite?"
+    }
+  },
+  "required": ["name", "port", "route"]
+}
