@@ -3,6 +3,8 @@
   "version": "1.0.0-semantically-released",
   "description": "",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -27,6 +29,7 @@
     "jest": "^30.0.2",
     "jest-environment-node": "^30.0.2",
     "jest-util": "^30.0.2",
+    "jiti": "^2.6.1",
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "21.6.5",
     "prettier": "^2.6.2",
